@@ -1,0 +1,12 @@
+.auth_form {
+  @apply border border-gray-200 px-4 py-5  bg-white w-full sm:w-10/12 md:w-8/12 lg:w-4/12 shadow;
+}
+.auth_form-input {
+  @apply block w-full px-4 py-2 border border-gray-300 rounded-sm outline-none focus:ring-2 focus:ring-indigo-400 transition-all;
+}
+.auth_form-btn {
+  @apply block font-bold w-full bg-indigo-500 text-white uppercase rounded-sm py-2 text-xl !important;
+}
+.auth_form-span {
+  @apply text-center block text-gray-600 font-semibold hover:text-gray-800 transition-all;
+}

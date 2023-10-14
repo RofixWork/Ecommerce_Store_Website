@@ -1,0 +1,30 @@
+@import "./styles/formAuth.css";
+@import "./styles/AccountList.css";
+@import "./styles/styles.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .form-control {
+    @apply w-full py-3 px-4 bg-black1 rounded outline-none text-white focus:ring-1 ring-white ring-opacity-60;
+  }
+
+  .btn-submit {
+    @apply bg-indigo-600 text-white px-[14px] py-[10px] cursor-pointer rounded capitalize text-lg font-semibold;
+  }
+  .alert-error {
+    @apply text-red-500 bg-red-200 py-3 px-2 font-semibold text-base  mb-3 border-l-[3px] border-l-red-600;
+  }
+  .alert-success {
+    @apply text-indigo-500 bg-indigo-200 py-3 px-2 font-semibold text-base  mb-3 border-l-[3px] border-l-indigo-600;
+  }
+  .container {
+    @apply w-full max-w-screen-xl mx-auto;
+  }
+}
+.ql-toolbar.ql-snow {
+  @apply bg-gray-900 border-0 !important;
+}
+.ql-container.ql-snow {
+  @apply border-gray-500 bg-gray-800 !important;
+}

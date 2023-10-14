@@ -1,0 +1,19 @@
+.account_links {
+  @apply flex flex-col gap-y-5;
+}
+.account_link {
+  @apply flex items-center gap-x-2 py-3 px-2 rounded-md;
+}
+.account_link.active,
+.account_link:hover {
+  @apply bg-gray-100;
+}
+.account_link span {
+  @apply text-lg font-semibold;
+}
+.account_user-info h2 {
+  @apply text-xl font-semibold text-gray-900 uppercase;
+}
+.account_user-info h3 {
+  @apply text-lg font-mono font-semibold text-gray-900;
+}
