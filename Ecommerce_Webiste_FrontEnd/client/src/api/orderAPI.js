@@ -4,7 +4,7 @@ const orderAPI = createApi({
   reducerPath: "orderAPI",
   tagTypes: ["orders"],
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://localhost:7180/api/Order",
+    baseUrl: "http://localhost/storeAPI/api/Order",
     prepareHeaders: (headers, { getState }) => {
       const { adminToken } = getState().auth;
       if (adminToken) {

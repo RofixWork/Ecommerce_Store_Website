@@ -4,7 +4,7 @@ const categoryAPI = createApi({
   reducerPath: "categoryAPI",
   tagTypes: "categories",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://localhost:7180/api/Category",
+    baseUrl: "http://localhost/storeAPI/api/Category",
     prepareHeaders: (headers, { getState }) => {
       const { adminToken } = getState().auth;
       if (adminToken) {

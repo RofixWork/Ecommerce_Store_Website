@@ -2,7 +2,9 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/dist/query/react";
 
 const paymentAPI = createApi({
   reducerPath: "paymentAPI",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://localhost:7180/api/Payments" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "http://localhost/storeAPI/api/Payments",
+  }),
   endpoints: (builder) => ({
     sendPayment: builder.mutation({
       query: (payemntData) => ({

@@ -4,7 +4,7 @@ const productAPI = createApi({
   reducerPath: "productAPI",
   tagTypes: ["products"],
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://localhost:7180/api/Product",
+    baseUrl: "http://localhost/storeAPI/api/Product",
     prepareHeaders: (headers, { getState }) => {
       const { adminToken } = getState().auth;
       if (adminToken) {
